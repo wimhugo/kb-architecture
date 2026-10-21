@@ -1,0 +1,5 @@
+# DANS Documentation Knowledge Base
+
+# Intent
+
+Consolidate a large, partially complete documentation corpus currently held in Google Drive (documents, presentations, PDFs, and IcePanel architecture diagrams) into a mature collection with one canonical document per distinct topic, published as Word, PowerPoint, Excel and PDF copies accessible independently of Google Drive. The corpus is managed as the 'DANS documentation' Knowledge Base within the established boRDMIk architecture: a Git repository holds the RDF schema, SKOS vocabularies, registries of instances, graph instances and release snapshots, and this app is the curation UI that reads and writes that repository directly. The app also serves as the public search and discovery client over the graph: it indexes the graph, resolves vocabulary and registry URIs to human-readable labels, and provides detailed resource views. A later phase extends the corpus with papers and resources from the web (often Zenodo) and less-organised project-grouped supplementary documents.
