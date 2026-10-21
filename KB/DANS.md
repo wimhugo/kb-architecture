@@ -19,44 +19,14 @@ Curators in the case of the DANS Documentation corpus: likely will have automate
 
 These are specific to the general requirements and functions available from the existing automated curation applications.
 
-Curator imports the Google Drive inventory (document list with metadata) into the app; each document becomes a resource node in the KB graph, written to the repository
-
-2.
-
-Curation review: curator inspects each resource, marks it as placeholder/duplicate/draft to discard, or promotes it as the canonical document for its topic; the decision is recorded in the graph
-
-3.
-
-Structure rule: requirements and specifications live in a canonical topic library; project-specific modifications live in annexes; each project has a summary document that links the requirements and specifications applicable to it
-
-4.
-
-Curator exports IcePanel architecture diagrams as PDFs, publishes them, and records them in the graph with diagram-for relations to the documents they illustrate
-
-5.
-
-Curator consolidates presentations into a smaller canonical subset using the same review-and-promote flow
-
-6.
-
-Publishing: canonical documents are made available as Word, PowerPoint, Excel and PDF copies stored independently of Google Drive (app file storage or Drive), with stable URLs recorded as properties of the graph nodes
-
-7.
-
-Curator annotates resources with keywords drawn from controlled vocabularies maintained as SKOS concept schemes and registries of instances (topics, projects) in the repository; edits to vocabularies and registries are written back to the repository
-
-8.
-
-Metadata graph: every resource is connected to topics, projects, keywords and other resources (relations such as supersedes, extends, annex-of, diagram-for), all persisted in the repository's graph instances
-
-9.
-
-Public discovery: visitor searches by free text or controlled keyword, browses by topic or project, and opens a resource detail page showing metadata, relationships and download/view links in all published formats, with URIs resolved to human-readable labels
-
-10.
-
-Release management: snapshots of vocabularies, registries and graphs can be taken into a releases folder in the repository, associated with a specific release of the KB
-
-11.
-
-Later phase: curator ingests web/Zenodo papers and less-organised project-grouped supplementary documents through the same annotation and classification flow, and the graph structure allows later combination with other boRDMIk knowledge bases since resources may be shared while each KB classifies them differently
+1. Corpus Import: Curator imports the Google Drive inventory (document list with metadata) into the app; each document becomes a resource node in the KB graph, written to the repository
+2. Curation review: an **automated routine** inspects each resource, marks it as placeholder/duplicate/draft to discard, or promotes it as the canonical document for its topic; the decision is recorded in the graph. Curators can manually revisit this classification in a UI and amend it.
+3. Structure rule: requirements and specifications live in a canonical topic library; project-specific modifications live in annexes; each project has a summary document that links the requirements and specifications applicable to it. This 
+4. Curator exports IcePanel architecture diagrams as PDFs, publish es them, and an autimated routine attmepts to identify and link them with resources, again editable by curators in a UI.
+5. Curator consolidates presentations into a smaller canonical subset using the same review-and-promote flow
+6. Publishing: canonical documents are made available as Word, PowerPoint, Excel and PDF copies stored independently of Google Drive (app file storage or Drive), with stable URLs recorded as properties of the graph nodes
+7. Curator annotates resources with keywords drawn from controlled vocabularies maintained as SKOS concept schemes and registries of instances (topics, projects) in the repository; edits to vocabularies and registries are written back to the repository
+8. Metadata graph: every resource is connected to topics, projects, keywords and other resources (relations such as supersedes, extends, annex-of, diagram-for), all persisted in the repository's graph instances
+9. Public discovery: visitor searches by free text or controlled keyword, browses by topic or project, and opens a resource detail page showing metadata, relationships and download/view links in all published formats, with URIs resolved to human-readable labels
+10. Release management: snapshots of vocabularies, registries and graphs can be taken into a releases folder in the repository, associated with a specific release of the KB
+11. Later phase: curator ingests web/Zenodo papers and less-organised project-grouped supplementary documents through the same annotation and classification flow, and the graph structure allows later combination with other boRDMIk knowledge bases since resources may be shared while each KB classifies them differently.
